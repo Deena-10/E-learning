@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zippy Learner - Courses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f2f6ff;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 40px;
+      color: #234489;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 40px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .course-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .course-card .header {
+      background: #234489;
+      padding: 20px;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .course-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+    }
+
+    .course-card .content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .course-card .content p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .course-card .action {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .course-card .action a {
+      background-color: #1b6dc1;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .course-card .action a:hover {
+      background-color: #144f8d;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Our Courses</h2>
+  <p class="subtitle">Choose a course you're excited to explore and start learning!</p>
+
+  <div class="course-container">
+
+    <!-- C Programming -->
+    <div class="course-card">
+      <div class="header">C Programming</div>
+      <div class="content">
+        <p>Master the fundamentals of programming with C — a foundation for many other languages.</p>
+      </div>
+      <div class="action">
+        <a href="cprogram.html"><i class="fas fa-play"></i> Start</a>
+      </div>
+    </div>
+
+    <!-- Java Programming -->
+    <div class="course-card">
+      <div class="header">Java Programming</div>
+      <div class="content">
+        <p>Build robust applications with Java. Learn OOP, collections, and build real-world projects.</p>
+      </div>
+      <div class="action">
+        <a href="java.html"><i class="fas fa-play"></i> Start</a>
+      </div>
+    </div>
+
+    <!-- Python Programming -->
+    <div class="course-card">
+      <div class="header">Python Programming</div>
+      <div class="content">
+        <p>From data science to automation

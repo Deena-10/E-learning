@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | ZIPPY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-card h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #1565c0;
+    }
+
+    .login-card h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #455a64;
+      font-weight: normal;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #cfd8dc;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #f8f9fa;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #64b5f6;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #2196f3;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1976d2;
+    }
+
+    @media (max-width: 480px) {
+      .login-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <h2>ZIPPY LEARNER</h2>
+    <h1>Login</h1>
+    <form name="loginForm" onsubmit="return validateForm()">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required />
+
+      <label for="regno">Registration Number</label>
+      <input type="text" id="regno" name="regno" placeholder="Enter reg. number" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+      <input type="submit" class="btn" value="Login" />
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
